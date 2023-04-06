@@ -14,6 +14,8 @@
 
 ## Outline of the Project
 
+### Data Source and Data Cleaning
+
 * Data was sourced from IMDB. Link to data here: https://datasets.imdbws.com
 * Data was cleaned to drop all null values, select only movies, and drop columns not relevant for our analysis. We focused our analysis on genre, rating, votes, release year, gross revenue, and region of production. 
 
@@ -23,10 +25,21 @@
 
 ![image](https://user-images.githubusercontent.com/104707395/230266555-7a3e2d20-242d-4f0c-9fa6-1bd60ca4f73d.png)
 
+### Database 
 
-* Once the data was cleaned, it was uploaded to Amazon AWS.
-* Pyspark is used to perform analysis on data housed in S3 buckets via URL.
-* K-means clustering algorithm is performed on the dataset to look for clusters in the data.
+* A database diagram was created to setup pgAdmin tables to house the datasets.
+
+![image](https://user-images.githubusercontent.com/104707395/230267089-33571b57-4021-4ea6-b9e2-8423ad1ed6c5.png)
+
+* Data was imported into pgAdmin and uploaded to Amazon RDS.
+
+![image](https://user-images.githubusercontent.com/104707395/230266882-ab8fe9ea-b2a7-4525-a9fc-42dc7a96a003.png)
+
+* Data was queried using psycopg in Google Colab and datasets were joined for subsequent machine learning.
+
+### Machine Learning Model
+
+* 
 
 ## Presentation
 
